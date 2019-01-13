@@ -22,7 +22,7 @@ with open(txt_old_md5,'w') as f:
 localtime = (datetime.datetime.now()).isoformat()
 if old_md5 != md5:
 	with open(txt_update_status,'a') as f:
-		f.write('最近更新於'+localtime+'\n')
+		f.write('網站已更新'+localtime+'\n')
 else:
 	with open(txt_update_status,'a') as f:
 		f.write('無任何更新'+localtime+'\n')
